@@ -6,12 +6,16 @@ A Responsive Grid that's based on inline-block and has:
 - robustness
 - a small footprint
 - sensible and timesaving defaults
-- vertical alignment options
 - easy and unlimited nesting
+- pushing and pulling
+- vertical alignment options
+- classes for hiding on certain views
 - no float clearing
 - no last-item classes
 
-It works practically everywhere and is easy to learn. The only small caveat you need to work around when using inline-block for grids is the white-space issue. There are different ways around it 1 2 and it's up to you, which way you take. I've been using the HTML-Comment method since years and it's only a small bother and absolutely bullet-proof.
+It works practically everywhere and is easy to learn. The only small caveat you need to work around when using inline-block for grids is the white-space issue. There are different ways around it and it's up to you, which way you take. I've been using the HTML-Comment method since years and it's only a small bother and absolutely bullet-proof.
+(https://css-tricks.com/fighting-the-space-between-inline-block-elements/ ,  
+https://davidwalsh.name/remove-whitespace-inline-block)
 
 This is how it might look like:
 
@@ -34,8 +38,6 @@ You can control the width of every grid item in each view (media-query). But you
 If you set a S-class it will control the S and XS-view and if you set a L-Class it will control the L and XL-view. But you still have the ability to set XS- and XL-classes to set individual element-widths for those views. This gives you the convenience and flexibilty of having 5(!) different views without actually having to set them all individually and without losing control. 
 For example: If you still want the element to be full width in the xs-view after you set a s-class you can simply add a .xs-12 to override it. 
 
-This visual presentation shows you which class is active in which browser-width:
-
 ## Nesting
 
 Grids can be nested without any extra steps. Just pack a .grid in any .span-. They won't break.
@@ -48,13 +50,17 @@ Pushing and Pulling works with .push- and .pull- and there are classes for every
 
 Add .center to .grid to center all enclosed grid items.
 
-##Show & Hide
+## Vertical Alignment
+
+You can use the classes .va-middle and .va-bottom on the elements to change the vertical alignment of elements. Or just do it via css yourself.
+
+## Show & Hide
 
 Add .hide- + xs/s/m/l/xl to any element to display:none it in a specific view. Add .show- + xs/s/m/l/xl to any grid element to only show it in a certain view and hide it in all others. You can combine these classes: .show-xs .show-xl will hide an element in all Views except the XS- and XL-View and .hide-xs .hide-xl will do the opposite.
 
-##Gutter
+## Gutter
 
-###Turn off the gutter
+### Turn off the gutter
 
 Add .no-gutter to .grid to remove the gutter. 
 (Note that there is no vertical Gap between the rows by default. You need to add that yourself if it's needed.)
