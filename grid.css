@@ -406,8 +406,8 @@ position: relative;
 .grid.center { text-align: center!important; }
 .grid.center [class*="span-"] { text-align: left; }
 
-div.va-middle { vertical-align: middle; }
-div.va-bottom { vertical-align: bottom; }
+.va-middle { vertical-align: middle; }
+.va-bottom { vertical-align: bottom; }
 
 .debug-grid:after {
     position: fixed;
