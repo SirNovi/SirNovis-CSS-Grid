@@ -18,7 +18,7 @@ position: relative;
 }
 
 [class*="span-"] {
- 	position: relative;
+  position: relative;
   display: inline-block;
   padding-left: 15px;
   vertical-align: top;
