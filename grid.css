@@ -6,13 +6,6 @@
 
 .grid-wrap{
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media only screen and (min-width:600px) {
-  .grid-wrap {
-    padding: 0 40px;
-  }
 }
 
 .grid {
@@ -27,12 +20,11 @@ position: relative;
 [class*="span-"] {
  	position: relative;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   padding-left: 15px;
   vertical-align: top;
+*display: inline;
+*zoom: 1;
 }
-
 
 .span-1  { width: 100%; }
 .span-2  { width: 100%; }
@@ -76,7 +68,7 @@ position: relative;
 @media screen and (max-width: 779px) {
 .debug-grid:after { content: "S -779"; }
 
-/*.grid-wrap { padding: 0 15px; }*/
+.grid-wrap { padding: 0 20px; }
 
 .s-1  { width: 8.333%; }
 .s-2  { width: 16.666%; }
@@ -124,7 +116,7 @@ position: relative;
 @media screen and (max-width: 479px) {
 .debug-grid:after { content: "XS -479"; }
 
-/*.grid-wrap { padding: 0 10px; }*/
+.grid-wrap { padding: 0 10px; }
 
 .xs-1  { width: 8.333%; }
 .xs-2  { width: 16.666%; }
@@ -176,6 +168,8 @@ position: relative;
 .grid { margin-left: -20px; }
 [class*="span-"] { padding-left: 20px; }
 
+.grid-wrap { width: 700px; }
+
 .span-1  { width: 8.333%; }
 .span-2  { width: 16.666%; }
 .span-3  { width: 25%; }
@@ -219,8 +213,6 @@ position: relative;
 
 @media only screen and (min-width : 780px) and (max-width : 999px) {
 .debug-grid:after { content: "M 780-999"; }
-
-/*.grid-wrap { width: 740px; }*/
 
 .m-1  { width: 8.333%; }
 .m-2  { width: 16.666%; }
@@ -268,7 +260,7 @@ position: relative;
 @media screen and (min-width: 1000px) {
 .debug-grid:after { content: "L 1000+"; }
 
-.grid-wrap { width: 960px; }
+.grid-wrap { width: 920px; }
 
 .l-1  { width: 8.333%; }
 .l-2  { width: 16.666%; }
@@ -315,7 +307,8 @@ position: relative;
 
 @media screen and (min-width: 1200px) {
 .debug-grid:after { content: "XL 1200+"; }
-.grid-wrap { width: 1140px; }
+
+.grid-wrap { width: 1120px; }
 
 .grid { margin-left: -30px; }
 [class*="span-"] { padding-left: 30px; }
@@ -364,7 +357,8 @@ position: relative;
 }
 
 @media screen and (min-width: 1400px) {
-  .debug-grid:after { content: "1400+"; }  
+  .debug-grid:after { content: "1400+"; } 
+
   .grid-wrap { width: 1320px; }
 }
 
